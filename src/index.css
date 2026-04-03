@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Soft Ivory + Indigo Tech (light) */
+@theme {
+  --font-family-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-family-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #f5f3ef;
+  --color-bg-elevated: #ffffff;
+  --color-bg-secondary: #ede9e3;
+  --color-border: #ede9e3;
+  --color-fg: #111827;
+  --color-muted: #4b5563;
+  --color-accent: #4f46e5;
+  --color-accent-hover: #6366f1;
+  --color-highlight: #10b981;
+  --color-highlight-hover: #059669;
+
+  --spacing-section: clamp(4rem, 8vw, 7rem);
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply m-0 min-h-dvh bg-[var(--color-bg)] font-sans text-[var(--color-muted)] antialiased;
+    font-family: var(--font-family-sans);
+  }
+
+  .font-display {
+    font-family: var(--font-family-display);
+  }
+
+  ::selection {
+    @apply bg-[var(--color-accent)]/15 text-[var(--color-fg)];
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-[var(--color-accent)];
+  }
+}
