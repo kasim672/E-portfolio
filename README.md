@@ -1,4 +1,4 @@
-# e_portfolio — Kasim Ishaque Ghanchi
+# E_portfolio — Kasim Ishaque Ghanchi
 
 A single-page personal portfolio site: **Machine Learning Engineer | AI Researcher | Deep Learning Systems**. It presents professional background, research role, projects, skills, education, and contact in a minimal, accessible layout.
 
